@@ -2,28 +2,29 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
+import { storeImages } from "@/lib/images";
 
 const projects = [
   {
     id: 1,
-    title: "Appartement Haussmannien",
+    title: "Solution Stores Intérieurs",
     category: "Stores Intérieurs",
-    description: "Installation de stores vénitiens en bois sur mesure pour préserver le cachet de l'ancien.",
-    image: "/images/amel-majanovic-r8r2I7FsaIE-unsplash.jpg"
+    description: "Habillage fenêtres avec stores sur mesure. Alliant esthétique et fonctionnalité pour embellir et contrôler la luminosité de votre intérieur.",
+    image: storeImages.portfolio1
   },
   {
     id: 2,
-    title: "Bureaux La Défense",
+    title: "Protection Thermique Avancée",
     category: "Films Solaires",
-    description: "Pose de films anti-chaleur sur une surface vitrée de 400m² pour améliorer le confort thermique.",
-    image: "/images/r-mo-w-_iZqdviAo-unsplash.jpg"
+    description: "Application de films solaires haute performance pour réduire la chaleur, l'éblouissement et protéger vos meubles des UV.",
+    image: storeImages.portfolio2
   },
   {
     id: 3,
-    title: "Villa Contemporaine",
-    category: "Protection Solaire Extérieure",
-    description: "Intégration de brises-soleil orientables (BSO) motorisés et domotisés.",
-    image: "/images/thanh-nguyen-3dnh-IRbIZY-unsplash.jpg"
+    title: "Système Motorisé Premium",
+    category: "Stores Motorisés",
+    description: "Installation de systèmes de volets roulants ou stores motorisés pour allier confort, commodité et contrôle automatisé.",
+    image: storeImages.portfolio3
   }
 ];
 

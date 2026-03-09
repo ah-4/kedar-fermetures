@@ -1,7 +1,9 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 import { Check } from "lucide-react";
+import { storeImages } from "@/lib/images";
 
 export default function About() {
   const features = [
@@ -23,17 +25,14 @@ export default function About() {
             transition={{ duration: 0.6 }}
           >
             <div className="relative">
-              <div className="w-full h-[500px] bg-gray-800 rounded-2xl overflow-hidden relative">
-                 {/* Placeholder styled to look like an architectural photo */}
-                 <div className="absolute inset-0 bg-gradient-to-br from-gray-700 to-gray-900 opacity-50"></div>
-                 <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-gray-600 font-bold text-9xl opacity-10 select-none">
-                   KEDAR
-                 </div>
-                 
-                 {/* Decorative elements representing blinds/lines */}
-                 <div className="absolute top-10 left-10 right-10 h-0.5 bg-white/20"></div>
-                 <div className="absolute top-20 left-10 right-10 h-0.5 bg-white/20"></div>
-                 <div className="absolute top-30 left-10 right-10 h-0.5 bg-white/20"></div>
+              <div className="w-full h-[500px] bg-gray-800 rounded-2xl overflow-hidden relative group">
+                <Image
+                  src={storeImages.about}
+                  alt="Installation de stores modernes"
+                  fill
+                  className="object-cover transition-transform duration-700 group-hover:scale-105"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-black/20 to-transparent"></div>
               </div>
               {/* Floating Badge */}
               <div className="absolute -bottom-6 -right-6 bg-white text-black p-8 rounded-xl shadow-xl hidden md:block">
