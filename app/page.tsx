@@ -1,6 +1,7 @@
 import Navbar from "@/components/navbar";
 import Hero from "@/components/hero";
 import Services from "@/components/services";
+import SolarFilms from "@/components/solar-films";
 import About from "@/components/about";
 import Portfolio from "@/components/portfolio";
 import Contact from "@/components/contact";
@@ -12,6 +13,7 @@ export default function Home() {
       <Navbar />
       <Hero />
       <Services />
+      <SolarFilms />
       <About />
       <Portfolio />
       <Contact />

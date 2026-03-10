@@ -1,6 +1,6 @@
 /**
  * Configuration centralisée des images de stores
- * 7 images de stores différentes à ajouter dans /public/assets/img/
+ * 7 images de stores + 4 images de films solaires
  */
 
 export const storeImages = {
@@ -17,6 +17,12 @@ export const storeImages = {
 
   // About
   about: "/assets/img/store-4.jpg", // Image About (partage avec service4)
+
+  // Films solaires - 4 images
+  solarFilm1: "/assets/img/film-solaire-1.jpg", // Film anti-chaleur
+  solarFilm2: "/assets/img/film-solaire-2.jpg", // Film protection UV
+  solarFilm3: "/assets/img/film-solaire-3.jpg", // Film intimité
+  solarFilm4: "/assets/img/film-solaire-4.jpg", // Film sécurité
 } as const;
 
 /**
